@@ -193,7 +193,7 @@ WHERE
     quantity = 4
 ```
 
-3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
+3. **Write a SQL query to calculate the total sales (total_sale) for each category**:
 ```sql
 SELECT category, 
 	   SUM(total_sale) AS total_sales
@@ -201,7 +201,7 @@ FROM retail_sales
 GROUP BY category;
 ```
 
-4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
+4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category**:
 ```sql
 SELECT category, 
 	   ROUND(AVG(age), 2) AS avg_age
@@ -210,14 +210,14 @@ WHERE category = 'Beauty'
 GROUP BY category;
 ```
 
-5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
+5. **Write a SQL query to find all transactions where the total_sale is greater than 1000**:
 ```sql
 SELECT *
 FROM retail_sales
 WHERE total_sale > 1000;
 ```
 
-6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
+6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category**:
 ```sql
 SELECT category,
 	   gender, 
@@ -256,7 +256,7 @@ ORDER BY total_sales DESC
 LIMIT 5;
 ```
 
-9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
+9. **Write a SQL query to find the number of unique customers who purchased items from each category**:
 ```sql
 SELECT category, 
 	   COUNT(DISTINCT customer_id)
@@ -298,7 +298,7 @@ Identified high-value transactions exceeding 1000.
 Ranked customers by their overall spending to identify premium shoppers.
 - **Seasonality**
 Determined seasonality patterns to optimize inventory and marketing strategies.
-- **sales Distribution **
+- **Sales Distribution **
 Analyzed gender-wise purchasing behavior across different product categories.
 
 ## Key SQL Queries Used 
